@@ -1,4 +1,4 @@
-# kilianpaquier.github.io <!-- omit in toc -->
+# website <!-- omit in toc -->
 
 <p align="center">
   <img alt="GitHub Release" src="https://img.shields.io/github/v/release/kilianpaquier/kilianpaquier.github.io?include_prereleases&sort=semver&style=for-the-badge">
