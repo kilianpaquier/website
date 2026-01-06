@@ -23,34 +23,43 @@ TV shows or animes, play video games, read online mangas or manhwas, or even (an
 ### CI/CD
 {class="mb-2"}
 
-{{< svg src="https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/githubactions.svg" width="22" tooltip="GitHub Actions" >}}
-{{< svg src="https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/gitlab.svg" width="22" tooltip="GitLab CI/CD" >}}
-{{< svg src="https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/semanticrelease.svg" width="22" tooltip="Semantic Release" >}}
-{{< svg src="https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/netlify.svg" width="22" tooltip="Netlify" >}}
-{{< svg src="https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/sonarqubeserver.svg" width="22" tooltip="SonarQube" >}}
-{{< svg src="https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/codecov.svg" width="22" tooltip="CodeCov" >}}
-{{< svg src="https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/dependabot.svg" width="22" tooltip="Dependabot" >}}
-{{< svg src="https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/renovate.svg" width="22" tooltip="Renovate" >}}
+{{< svg src="https://cdn.simpleicons.org/gitlab" width="22" tooltip="GitLab CI/CD" >}}
+{{< svg src="https://cdn.simpleicons.org/githubactions" width="22" tooltip="GitHub Actions" >}}
+{{< svg src="https://cdn.simpleicons.org/opentofu" width="22" tooltip="OpenTofu" >}}
+{{< svg src="https://cdn.simpleicons.org/terraform" width="22" tooltip="Terraform" >}}
+{{< svg src="https://cdn.simpleicons.org/semanticrelease" width="22" tooltip="Semantic Release" >}}
+{{< svg src="https://cdn.simpleicons.org/netlify" width="22" tooltip="Netlify" >}}
+{{< svg src="https://cdn.simpleicons.org/sonarqubeserver" width="22" tooltip="SonarQube" >}}
+{{< svg src="https://cdn.simpleicons.org/codecov" width="22" tooltip="CodeCov" >}}
+{{< svg src="https://cdn.simpleicons.org/dependabot" width="22" tooltip="Dependabot" >}}
+{{< svg src="https://cdn.simpleicons.org/renovate" width="22" tooltip="Renovate" >}}
+{class="d-flex flex-wrap col-gap-4 row-gap-4"}
+
+### Cloud
+
+{{< svg src="https://cdn.simpleicons.org/kubernetes" width="22" tooltip="Kubernetes" >}}
+{{< svg src="https://cdn.simpleicons.org/googlecloud" width="22" tooltip="Google Cloud Platform" >}}
+{{< svg src="https://cdn.simpleicons.org/coolify" width="22" tooltip="Coolify" >}}
 {class="d-flex flex-wrap col-gap-4 row-gap-4"}
 
 ### Package management
 {class="mb-2"}
 
-{{< svg src="https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/pnpm.svg" width="22" tooltip="Pnpm" >}}
+{{< svg src="https://cdn.simpleicons.org/pnpm" width="22" tooltip="Pnpm" >}}
 {{< svg src="https://raw.githubusercontent.com/oven-sh/bun/refs/heads/main/src/logo.svg" width="22" tooltip="Bun" >}}
-{{< svg src="https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/yarn.svg" width="22" tooltip="Yarn" >}}
-{{< svg src="https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/npm.svg" width="22" tooltip="Npm" >}}
-{{< svg src="https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/apachemaven.svg" width="22" tooltip="Maven" >}}
+{{< svg src="https://cdn.simpleicons.org/yarn" width="22" tooltip="Yarn" >}}
+{{< svg src="https://cdn.simpleicons.org/npm" width="22" tooltip="Npm" >}}
+{{< svg src="https://cdn.simpleicons.org/apachemaven" width="22" tooltip="Maven" >}}
 {class="d-flex flex-wrap col-gap-4 row-gap-4"}
 
 ### Others
 {class="mb-2"}
 
-{{< svg src="https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/gnubash.svg" width="22" tooltip="Bash" >}}
+{{< svg src="https://cdn.simpleicons.org/gnubash" width="22" tooltip="Bash" >}}
 {{< svg src="/static/icons/visualstudiocode.svg" width="22" tooltip="Visual Studio Code" >}}
 {{< svg src="/static/icons/jsonschema.svg" width="22" tooltip="JSON Schema" >}}
-{{< svg src="https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/jira.svg" width="22" tooltip="Jira" >}}
-{{< svg src="https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/jfrog.svg" width="22" tooltip="JFrog" >}}
+{{< svg src="https://cdn.simpleicons.org/jira" width="22" tooltip="Jira" >}}
+{{< svg src="https://cdn.simpleicons.org/jfrog" width="22" tooltip="JFrog" >}}
 {class="d-flex flex-wrap col-gap-4 row-gap-4"}
 
 ## Experiences
@@ -63,7 +72,26 @@ TV shows or animes, play video games, read online mangas or manhwas, or even (an
 {class="m-0"}
 Software Engineer
 {class="m-0"}
-October 2022 - Today
+October 2025 - Today
+{class="m-0 text-small"}
+
+{{% /side-img %}}
+
+- Technical migration and split of a Java 8, Wicket 1.5 monolith to Java 21, Wicket 10.
+- Continuous Integration and Deployment chain modernization.
+- Deployment of the various components on Google Cloud Run (Service, Job, Scheduler) or specific products (Memorystore, Cloud SQL, Cloud Storage).
+
+Technologies : *Java, Wicket, GitLab CICD, Terraform, Docker, Google Cloud Platform, Playwright*.
+
+<!-- SSG -->
+
+{{% side-img src="/experiences/soprasteria.webp" width="30px" class="col-gap-4 mb-3" img-class="flex-self-center" inner-class="row-gap-1" %}}
+
+### Sopra Steria
+{class="m-0"}
+Software Engineer
+{class="m-0"}
+October 2022 - October 2025
 {class="m-0 text-small"}
 
 {{% /side-img %}}
