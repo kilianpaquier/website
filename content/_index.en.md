@@ -81,7 +81,7 @@ October 2025 - Today
 - Continuous Integration and Deployment chain modernization.
 - Deployment of the various components on Google Cloud Run (Service, Job, Scheduler) or specific products (Memorystore, Cloud SQL, Cloud Storage).
 
-Technologies : *Java, Wicket, GitLab CICD, Terraform, Docker, Google Cloud Platform, Playwright*.
+Technologies : *Java, Wicket, GitLab CICD, Terraform, Docker, Google Cloud Platform*.
 
 <!-- SSG -->
 

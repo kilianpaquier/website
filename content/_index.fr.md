@@ -82,7 +82,7 @@ Octobre 2025 - Aujourd'hui
 - Modernisation de la chaîne d'intégration et déploiement continue.
 - Déploiement des briques sur Google Cloud Run (*Service, Job, Scheduler*) ou produits spécifiques (*Memorystore, Cloud SQL, Cloud Storage*).
 
-Technologies : *Java, Wicket, GitLab CICD, Terraform, Docker, Google Cloud Platform, Playwright*.
+Technologies : *Java, Wicket, GitLab CICD, Terraform, Docker, Google Cloud Platform*.
 
 <!-- SSG -->
 
