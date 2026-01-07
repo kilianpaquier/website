@@ -79,7 +79,7 @@ Octobre 2025 - Aujourd'hui
 {{% /side-img %}}
 
 - Migration technique et découpage d'un monolithe Java 8, Wicket 1.5 vers Java 21, Wicket 10.
-- Modernisation de la chaîne d'intégration et déploiement continue.
+- Modernisation de la chaîne d'intégration et de déploiement continue.
 - Déploiement des briques sur Google Cloud Run (*Service, Job, Scheduler*) ou produits spécifiques (*Memorystore, Cloud SQL, Cloud Storage*).
 
 Technologies : *Java, Wicket, GitLab CICD, Terraform, Docker, Google Cloud Platform*.
