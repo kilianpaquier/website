@@ -1,6 +1,6 @@
 ---
 date: 2024-09-15
-description: L'un des meilleurs outils *Open Source* pour faire du *versioning* git ?
+description: Un des meilleurs outils *Open Source* pour faire du *versioning* git ?
 layout: bundle
 outputs: [ "Reveal" ]
 tags:
