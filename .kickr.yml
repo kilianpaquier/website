@@ -5,12 +5,10 @@ ci:
   provider: gitlab
   options:
     - kickr
-  website:
-    auto: true
-    hosting: netlify
-dependencies:
-  manager: renovate
 license: mit
 maintainers:
   - name: u.kilianpaquier
 platform: gitlab
+website:
+  auto: true
+  hosting: netlify
