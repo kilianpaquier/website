@@ -3,7 +3,7 @@ title: Kilian PAQUIER
 
 copyright: Copyright © 2025 Kilian PAQUIER
 
-languageCode: fr
+locale: fr
 defaultContentLanguage: fr
 
 theme:
@@ -11,7 +11,7 @@ theme:
   - github.com/joshed-io/reveal-hugo
 
 params:
-######################## Hugo Primer ########################
+  ######################## Hugo Primer ########################
   hugo_primer:
     favicon: /logo/10-rounded.webp
     nav_logo: /logo/10.webp
@@ -40,10 +40,10 @@ params:
         data-mapping: title
         data-reactions-enabled: 1
         data-repo-id: R_kgDOLn4oHQ
-        data-repo: kilianpaquier/kilianpaquier.github.io
+        data-repo: kilianpaquier/website
         data-strict: 1
 
-######################## Hugo Reveal ########################
+  ######################## Hugo Reveal ########################
   reveal_hugo:
     hash: true
     # highlight_theme: github

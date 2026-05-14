@@ -1,13 +1,13 @@
 fr:
   contentDir: content
-  languageName: Français
+  label: Français
   params:
     description: Langue natale
     pre: /static/flags/fr.svg
 
 en:
   contentDir: content
-  languageName: English
+  label: English
   params:
     description: Professional proficiency
     pre: /static/flags/en.svg
