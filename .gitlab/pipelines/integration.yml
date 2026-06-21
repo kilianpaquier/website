@@ -10,7 +10,9 @@ include:
       pre-commit-file: .pre-commit-config.yaml
 
 hugo-build:
-  image: $HUGO_IMAGE
+  image:
+    name: $HUGO_IMAGE
+    entrypoint: [""]
   stage: build
   needs:
     - semantic-release-info

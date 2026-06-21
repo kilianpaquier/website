@@ -2,7 +2,9 @@
 
 ---
 kickr:
-  image: $KICKR_IMAGE
+  image:
+    name: $KICKR_IMAGE
+    entrypoint: [""]
   stage: test
   needs: []
   rules:
