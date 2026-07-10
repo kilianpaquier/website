@@ -6,9 +6,14 @@ copyright: Copyright © 2025 Kilian PAQUIER
 locale: fr
 defaultContentLanguage: fr
 
-theme:
-  - github.com/kilianpaquier/hugo-primer
-  - github.com/joshed-io/reveal-hugo
+module:
+  imports:
+    - path: github.com/kilianpaquier/hugo-primer
+      # renovate: datasource=github-tags packageName=kilianpaquier/hugo-primer depName=hugo-primer
+      version: 2112c70e5d41d84b53e63ba8bf76a646e63f86fa # v1.2.3
+    - path: github.com/joshed-io/reveal-hugo
+      # renovate: datasource=git-refs packageName=joshed-io/reveal-hugo depName=reveal-hugo
+      version: 94e8660849dea33e19ee8221fe07e050b8465f1a # master
 
 params:
   ######################## Hugo Primer ########################
