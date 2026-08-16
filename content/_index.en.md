@@ -46,7 +46,7 @@ TV shows or animes, play video games, read online mangas or manhwas, or even (an
 {class="mb-2"}
 
 {{< svg src="https://cdn.simpleicons.org/pnpm" width="22" tooltip="Pnpm" >}}
-{{< svg src="https://raw.githubusercontent.com/oven-sh/bun/refs/heads/main/src/logo.svg" width="22" tooltip="Bun" >}}
+{{< svg src="https://raw.githubusercontent.com/oven-sh/bun/refs/heads/main/docs/logo/logo.svg" width="22" tooltip="Bun" >}}
 {{< svg src="https://cdn.simpleicons.org/yarn" width="22" tooltip="Yarn" >}}
 {{< svg src="https://cdn.simpleicons.org/npm" width="22" tooltip="Npm" >}}
 {{< svg src="https://cdn.simpleicons.org/apachemaven" width="22" tooltip="Maven" >}}

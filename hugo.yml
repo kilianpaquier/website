@@ -3,6 +3,19 @@ title: Kilian PAQUIER
 
 copyright: Copyright © 2025 Kilian PAQUIER
 
+cleanDestinationDir: true
+enableGitInfo: true
+ignoreCache: false
+minify:
+  disableCSS: true
+  disableHTML: true
+  disableJS: true
+  disableJSON: true
+  disableSVG: true
+  disableXML: true
+  minifyOutput: true
+publishDir: dist
+
 locale: fr
 defaultContentLanguage: fr
 
