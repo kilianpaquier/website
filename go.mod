@@ -1,4 +1,4 @@
-module github.com/kilianpaquier/kilianpaquier.github.io
+module gitlab.com/kilianpaquier/website
 
 go 1.24.0
 
