@@ -183,6 +183,19 @@ June 2016
 
 ## Formations
 
+<!-- ACE -->
+
+{{% timeline-item badge="/educations/ace.webp" inner-class="my-0 fgColor-default row-gap-1" %}}
+
+### ACE
+{class="m-0"}
+Google Cloud Associate Cloud Engineer
+{class="m-0"}
+September 2026
+{class="m-0 text-small"}
+
+{{% /timeline-item %}}
+
 <!-- PSM I -->
 
 {{% timeline-item badge="/educations/psmi.webp" inner-class="my-0 fgColor-default row-gap-1" %}}
