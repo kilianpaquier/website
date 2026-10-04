@@ -16,3 +16,11 @@
 </div>
 
 ---
+
+## License
+
+The [LICENSE](LICENSE) does not cover:
+
+- The `content/` directory, which has its own [LICENSE](content/LICENSE).
+- The `static/` directory, which belongs to third parties (logos of companies, schools, tools and projects, slide diagrams, interest images and the site logo).
+- The `static/profile/` directory, which holds my own photo and must not be reused without my permission.
