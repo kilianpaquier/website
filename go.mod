@@ -2,7 +2,7 @@ module gitlab.com/kilianpaquier/website
 
 go 1.24.0
 
-toolchain go1.27.1
+toolchain go1.27.2
 
 // replace github.com/kilianpaquier/hugo-primer => ../hugo-primer
 
