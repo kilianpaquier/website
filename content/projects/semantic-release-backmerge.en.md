@@ -2,9 +2,10 @@
 date: 2024-04-22
 description: |-
   Plugin for [**semantic-release**](https://github.com/semantic-release/semantic-release)
-  to backmerge released branch into one or multiple others and create a pull request in case of conflicts
+  to backmerge the released branch into other branches,
+  opening a pull or merge request on conflicts (**GitLab**, **GitHub**, **Gitea**, **Forgejo**, **Bitbucket**)
 params:
-  url: https://github.com/kilianpaquier/semantic-release-backmerge
+  url: https://gitlab.com/kilianpaquier/semantic-release-backmerge
 pin: true
 tags:
   - TypeScript

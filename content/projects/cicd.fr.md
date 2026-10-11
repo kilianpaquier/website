@@ -1,6 +1,6 @@
 ---
 date: 2023-02-03
-description: Templates de pipeline GitLab CI/CD pour Golang, Node.js et Maven
+description: Templates de pipeline GitLab CI/CD pour Golang, Node.js et Maven, avec build Docker et GitLab Pages
 params:
   url: https://gitlab.com/u.kilianpaquier/cicd
 tags:

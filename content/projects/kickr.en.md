@@ -1,11 +1,12 @@
 ---
 date: 2024-02-24
-description: Project layout generator (**GitHub** Actions, **GitLab** CI/CD, Dockerfile, **Helm** charts, license, etc.)
+description: Project layout generator (**GitLab** CI/CD, **GitHub** Actions, Dockerfile, **Helm** charts, **Renovate**, Justfile, license, etc.)
 params:
-  url: https://github.com/kickr-dev
+  url: https://gitlab.com/kickr-dev
 pin: true
 tags:
   - Golang
   - GitHub Actions
+  - GitLab
 title: kickr
 ---
