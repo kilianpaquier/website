@@ -68,120 +68,132 @@ TV shows or animes, playing video games, reading mangas or manhwas online, or ev
 
 <!-- SSG -->
 
-{{% side-img src="/experiences/soprasteria.webp" width="30px" class="col-gap-4 mb-3" img-class="flex-self-center" inner-class="row-gap-1" %}}
+{{% avatar-item src="/experiences/soprasteria.webp" width="30px" class="col-gap-4 mb-3" %}}
 
 ### Sopra Steria
 {class="m-0"}
-Software Engineer
-{class="m-0"}
-October 2025 - Today
+March 2021 - Today
 {class="m-0 text-small"}
 
-{{% /side-img %}}
+{{% /avatar-item %}}
 
-- Technical migration and split of a Java 8, Wicket 1.5 monolith to Java 21, Wicket 10.
-- Continuous Integration and Deployment chain modernization.
-- Deployment of the various components on Google Cloud Run (Service, Job, Scheduler) or specific products (Memorystore, Cloud SQL, Cloud Storage).
+{{% timeline-item inner-class="my-0 fgColor-default" %}}
 
-Technologies : *Java, Wicket, GitLab CICD, Terraform, Docker, Google Cloud Platform*.
-
-<!-- SSG -->
-
-{{% side-img src="/experiences/soprasteria.webp" width="30px" class="col-gap-4 mb-3" img-class="flex-self-center" inner-class="row-gap-1" %}}
-
-### Sopra Steria
+### Software Engineer
 {class="m-0"}
-Software Engineer
+August 2026 - Today
+{class="mt-1 text-small"}
+
+Cross-project mission, from audit to cloud migration.
+
+**Kubernetes migration**
+
+- Support on the migration of an application to an internal Kubernetes cluster, including its automated tests industrialization.
+- Alignment of an existing Helm chart of this application with standards and creation of a second one for part of its services.
+- Analysis of this application's file transfers switch, flow tests and follow-up of client actions.
+- Improvement areas raised to the architect (maintainability, legacy debt) and handling of quick wins.
+
+**Application insourcing**
+
+- Technical audit of a Java and RabbitMQ application (security, industrialization, quality) with remediation proposals.
+- Design of an API-configurable stub to replay real cases in testing and lighten Robot Framework scenarios.
+
+**GCP migration**
+
+- Support on the migration of an application to GCP, bringing a second opinion on some technical choices.
+
+Stacks: *Kubernetes, Helm, Traefik, GitLab CI/CD, Google Cloud Platform, Robot Framework*.
+
+{{% /timeline-item %}}
+
+{{% timeline-item inner-class="my-0 fgColor-default" %}}
+
+### Internal initiatives
+{class="m-0"}
+March 2021 - Today
+{class="mt-1 text-small"}
+
+**Tooling and knowledge sharing**
+
+- Provision of shared AI components (Docker-based MCP servers) through an internal marketplace.
+- Contributions to shared CI/CD templates, driven by my missions' needs.
+- Short and long knowledge sharing sessions on topics such as Terraform, Go or Semantic Release.
+
+**Internal labs**
+
+- Design of a self-learning lab on Coolify, from service exposure to DNS resolution of a domain.
+- Industrialization of the lab with Terraform (reusable module, GitLab project per participant) and an online guide built with Hugo.
+
+**Student events**
+
+- Deployment of the CTFd platform on OpenShift for student events, with a training space.
+- Load tests of the platform and setup of the infrastructure components needed for its *autoscaling*.
+- Industrialization of the event and training platforms deployment, as well as the challenges.
+
+Stacks: *Terraform, Azure, Coolify, Hugo, Hextra, OpenShift, Helm, CTFd, RustFS, k6, GitLab CI/CD, Docker, MCP*.
+
+{{% /timeline-item %}}
+
+{{% timeline-item inner-class="my-0 fgColor-default" %}}
+
+### Software Engineer
+{class="m-0"}
+October 2025 - August 2026
+{class="mt-1 text-small"}
+
+Modernization of a legacy application and move to Google Cloud Platform.
+
+- Technical migration and split of a Java 8, Wicket 1.5 monolith to Java 21, Wicket 10 (API, webapp, jobs, batches).
+- Mapping of batch processing and its scheduling to prepare and simplify their move to Cloud Run.
+- Involvement in setting up a Go file ingestion component, to keep up with incoming files and better track processing.
+- Adaptation of the code and its configuration to the cloud, and improvement of log usability.
+- CI/CD setup based on existing GitLab CI templates, up to Terraform deployment in production.
+- Deployment of components on Cloud Run, Cloud SQL, Memorystore and Cloud Storage, and testing with other systems.
+- Application audit and improvement proposals (event-driven ingestion, remaining technical debt, performance).
+
+Stacks: *Shell, GitLab CI/CD, Terraform, Docker, Google Cloud Platform, Java, Spring, Wicket, Go, k6, Playwright*.
+
+{{% /timeline-item %}}
+
+{{% timeline-item inner-class="my-0 fgColor-default" %}}
+
+### Software Engineer
 {class="m-0"}
 October 2022 - October 2025
-{class="m-0 text-small"}
+{class="mt-1 text-small"}
 
-{{% /side-img %}}
+High-volume event processing Go applications, across three successive teams.
 
-- End-to-end involvement in feature lifecycle, from technical study to implementation to production and monitoring.
-- Functional and technical training of our new team members and validation of team productions.
-- Improvement and optimization of our client's development tools (automated test tool, notification bot, projets' layout generator, CI/CD).
-- Creation and configuration of Grafana dashboards to monitor applications.
-- Development of an Open Source generator for Go builders.
-- Maintenance and improvement of team(s) development environment setup.
+- Contribution to a Go chain ingesting and enriching around 10 million Kafka events per day.
+- Development of the application foundation of a second Go chain, handling grouping and computations on these events.
+- Development of business processes with Camunda and of Temporal workflows.
+- Involvement in extending the expr language to make complex client specifics simple to configure through an API.
+- Technical study and design of new features with the Product Owner, up to production and Grafana monitoring.
+- Review of the team's work and onboarding of new team members.
+- Improvements to cross-team tooling (bot, project generator, PostgreSQL exporter, development environment).
+- Development of an Open Source Go builder generator for test data.
 
-Stacks : *Go, CDS, Cucumber, Kubernetes, Helm, Terraform, Kafka, PostgreSQL, TimescaleDB, Temporal.io, Camunda, Grafana, Prometheus.io, Graylog*.
+Stacks: *Go, CDS, Kubernetes, Helm, Terraform, PostgreSQL, TimescaleDB, Grafana, Camunda, expr, Kafka, Cucumber, Temporal.io, Mimir, Prometheus.io, Graylog*.
 
-<!-- SSG -->
+{{% /timeline-item %}}
 
-{{% side-img src="/experiences/soprasteria.webp" width="30px" class="col-gap-4 mb-3" img-class="flex-self-center" inner-class="row-gap-1" %}}
+{{% timeline-item inner-class="my-0 fgColor-default" %}}
 
-### Sopra Steria
-{class="m-0"}
-Software Engineer | Scrum Master
+### Software Engineer | Scrum Master
 {class="m-0"}
 March 2021 - October 2022
-{class="m-0 text-small"}
+{class="mt-1 text-small"}
 
-{{% /side-img %}}
+Internal Java and Angular applications, within a Scrum team.
 
-- Facilitation of Scrum rituals, team self-organization and agile process continuous improvement.
-- Involvement in full feature lifecycle: refinement, implementation (documentation, development, tests), delivery, deployment and support.
-- Functional and technical training of our new team members.
+- Scrum Master role taken over (ceremonies, guiding towards self-organization, continuous improvement).
+- Involvement in the development of Java REST APIs and Angular UIs, from User Story refinement to support.
+- User Story analysis and design of their integration into the code, with support from more experienced developers.
+- Onboarding of new team members.
 
-Stacks : *Java, Spring, Quarkus, GitLab CI/CD, Karatelabs, Docker, Kubernetes, Helm, Traefik Proxy, TypeScript, Angular, Bootstrap, PostgreSQL, Hibernate, Liquibase, Python, ElasticSearch*.
+Stacks: *Java, Spring, Quarkus, GitLab CI/CD, Karatelabs, Docker, Kubernetes, Helm, Traefik Proxy, TypeScript, Angular, Bootstrap, PostgreSQL, Hibernate, Liquibase, Python, ElasticSearch*.
 
-<!-- ALTEN -->
-
-{{% side-img src="/experiences/alten/10.webp" width="30px" class="col-gap-4 mb-3" img-class="flex-self-center" inner-class="row-gap-1" %}}
-
-### Alten
-{class="m-0"}
-Innovation consultant intern
-{class="m-0"}
-August 2020 - February 2021
-{class="m-0 text-small"}
-
-{{% /side-img %}}
-
-<!-- EUROSYS -->
-
-{{% side-img src="/experiences/eurosys.webp" width="30px" class="col-gap-4 mb-3" img-class="flex-self-center" inner-class="row-gap-1" %}}
-
-### Eurosys
-{class="m-0"}
-ExtJS technical study intern
-{class="m-0"}
-June - August 2019
-{class="m-0 text-small"}
-
-{{% /side-img %}}
-
-<!-- DDT -->
-
-{{% side-img src="/experiences/ddt/10.webp" width="30px" class="col-gap-4 mb-3" img-class="flex-self-center" inner-class="row-gap-1" %}}
-
-### DDT¹
-{class="m-0"}
-Java & Swing temporary worker
-{class="m-0"}
-August 2018
-{class="m-0 text-small"}
-
-{{% /side-img %}}
-
-<!-- DREAL -->
-
-{{% side-img src="/experiences/dreal/20.webp" width="30px" class="col-gap-4 mb-3" img-class="flex-self-center" inner-class="row-gap-1" %}}
-
-### DREAL²
-{class="m-0"}
-Network intership discovery
-{class="m-0"}
-June 2016
-{class="m-0 text-small"}
-
-{{% /side-img %}}
-
-*¹ Direction Départementale des Territoires.*
-{class="text-right mb-0"}
-*² Direction Régionale de l'Environnement, de l'Aménagement et du Logement.*
-{class="text-right mb-0"}
+{{% /timeline-item %}}
 
 ## Formations
 

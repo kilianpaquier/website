@@ -69,120 +69,132 @@ ou encore (et surtout) jouer au billard.
 
 <!-- SSG -->
 
-{{% side-img src="/experiences/soprasteria.webp" width="30px" class="col-gap-4 mb-3" img-class="flex-self-center" inner-class="row-gap-1" %}}
+{{% avatar-item src="/experiences/soprasteria.webp" width="30px" class="col-gap-4 mb-3" %}}
 
 ### Sopra Steria
 {class="m-0"}
-Ingénieur étude & développement
-{class="m-0"}
-Octobre 2025 - Aujourd'hui
+Mars 2021 - Aujourd'hui
 {class="m-0 text-small"}
 
-{{% /side-img %}}
+{{% /avatar-item %}}
 
-- Migration technique et découpage d'un monolithe Java 8, Wicket 1.5 vers Java 21, Wicket 10.
-- Modernisation de la chaîne d'intégration et de déploiement continue.
-- Déploiement des briques sur Google Cloud Run (*Service, Job, Scheduler*) ou produits spécifiques (*Memorystore, Cloud SQL, Cloud Storage*).
+{{% timeline-item inner-class="my-0 fgColor-default" %}}
 
-Technologies : *Java, Wicket, GitLab CICD, Terraform, Docker, Google Cloud Platform*.
-
-<!-- SSG -->
-
-{{% side-img src="/experiences/soprasteria.webp" width="30px" class="col-gap-4 mb-3" img-class="flex-self-center" inner-class="row-gap-1" %}}
-
-### Sopra Steria
+### Ingénieur études & développement
 {class="m-0"}
-Ingénieur étude & développement
+Août 2026 - Aujourd'hui
+{class="mt-1 text-small"}
+
+Mission transverse sur plusieurs projets, de l'audit à la migration vers le cloud.
+
+**Migration vers Kubernetes**
+
+- Appui à la migration d'une application vers un cluster Kubernetes interne, dont l'industrialisation de ses tests automatisés.
+- Mise aux standards d'une chart Helm existante de cette application et création d'une seconde pour une partie de ses services.
+- Analyse de la bascule des transferts de fichiers de cette application, tests des flux et suivi des actions client.
+- Remontée d'axes d'amélioration à l'architecte (maintenabilité, dette historique) et traitement des points rapides.
+
+**Internalisation d'une application**
+
+- Audit technique d'une application Java et RabbitMQ (sécurité, industrialisation, qualité) avec propositions de remédiation.
+- Conception d'un bouchon configurable par API pour rejouer des cas réels en test et alléger les scénarios Robot Framework.
+
+**Migration vers GCP**
+
+- Appui sur la migration d'une application vers GCP, avec un second regard sur certains choix techniques.
+
+Technologies : *Kubernetes, Helm, Traefik, GitLab CI/CD, Google Cloud Platform, Robot Framework*.
+
+{{% /timeline-item %}}
+
+{{% timeline-item inner-class="my-0 fgColor-default" %}}
+
+### Activités transverses
+{class="m-0"}
+Mars 2021 - Aujourd'hui
+{class="mt-1 text-small"}
+
+**Outillage et partage technique**
+
+- Mise à disposition des composants IA partagés (serveurs MCP sous Docker) via une marketplace interne.
+- Contributions aux templates CI/CD partagés, au fil des besoins de mes missions.
+- Sessions de partage techniques, de formats courts à longs, sur des sujets comme Terraform, Go ou Semantic Release.
+
+**Labs internes**
+
+- Conception d'un lab d'autoformation sur Coolify, de l'exposition des services à la résolution DNS d'un domaine.
+- Industrialisation du lab avec Terraform (module réutilisable, projet GitLab par participant) et parcours en ligne sous Hugo.
+
+**Événements étudiants**
+
+- Déploiement de la plateforme CTFd sur OpenShift pour des événements étudiants, avec un espace d'entraînement.
+- Tests de charge de la plateforme et mise en place des briques d'infrastructure nécessaires à son *autoscaling*.
+- Industrialisation du déploiement des plateformes d'événement et d'entraînement, ainsi que des challenges.
+
+Technologies : *Terraform, Azure, Coolify, Hugo, Hextra, OpenShift, Helm, CTFd, RustFS, k6, GitLab CI/CD, Docker, MCP*.
+
+{{% /timeline-item %}}
+
+{{% timeline-item inner-class="my-0 fgColor-default" %}}
+
+### Ingénieur études & développement
+{class="m-0"}
+Octobre 2025 - Août 2026
+{class="mt-1 text-small"}
+
+Modernisation d'une application historique et passage sur Google Cloud Platform.
+
+- Migration technique et découpage d'un monolithe Java 8, Wicket 1.5 vers Java 21, Wicket 10 (API, webapp, jobs, batchs).
+- Cartographie des traitements batch et de leur ordonnancement pour préparer et simplifier leur passage sur Cloud Run.
+- Participation à la mise en place d'une brique Go d'ingestion de fichiers, pour tenir le rythme et mieux suivre les traitements.
+- Adaptation du code et de sa configuration au cloud, et amélioration de l'exploitabilité des logs.
+- Mise en place de la CI/CD à partir de templates GitLab CI existants, jusqu'au déploiement Terraform en production.
+- Déploiement des briques sur Cloud Run, Cloud SQL, Memorystore et Cloud Storage, et validation des échanges avec le SI.
+- Audit de l'application et propositions d'évolution (ingestion événementielle, dette technique restante, performances).
+
+Technologies : *Shell, GitLab CI/CD, Terraform, Docker, Google Cloud Platform, Java, Spring, Wicket, Go, k6, Playwright*.
+
+{{% /timeline-item %}}
+
+{{% timeline-item inner-class="my-0 fgColor-default" %}}
+
+### Ingénieur études & développement
 {class="m-0"}
 Octobre 2022 - Octobre 2025
-{class="m-0 text-small"}
+{class="mt-1 text-small"}
 
-{{% /side-img %}}
+Applications Go de traitement d'événements à fort volume, au sein de trois équipes successives.
 
-- Prise en charge de l'étude technique des besoins et de toutes les phases d'implémentation jusqu'à la mise en production et supervision.
-- Formation fonctionnelle et technique des nouveaux collaborateurs et validation des productions de l'équipe.
-- Amélioration et optimisation de l'outillage client (outils de tests automatisés, bot de notification, générateur de projets, CI/CD).
-- Mise en place de *dashboards* Grafana pour la supervision des applicatifs.
-- Développement d'un générateur de builders Go *Open Source*.
-- Maintenance et évolution de l'installation des machines de développement des collaborateurs.
+- Contribution à une chaîne Go d'ingestion et d'enrichissement d'environ 10 millions d'événements Kafka par jour.
+- Développement du socle applicatif d'une seconde chaîne Go, chargée du regroupement et de calculs sur ces événements.
+- Développement de processus métier sous Camunda et de workflows Temporal.
+- Participation à l'extension du langage expr pour rendre des spécificités clients complexes simples à configurer via une API.
+- Étude technique et conception des évolutions avec le *Product Owner*, jusqu'à la production et au suivi Grafana.
+- Revue des développements de l'équipe et accompagnement des nouveaux arrivants.
+- Évolutions de l'outillage transverse (bot, générateur de projets, exporter PostgreSQL, environnement de dev).
+- Développement d'un générateur de builders Go *Open Source* pour les données de test.
 
-Technologies : *Go, CDS, Cucumber, Kubernetes, Helm, Terraform, Kafka, PostgreSQL, TimescaleDB, Temporal.io, Camunda, Grafana, Prometheus.io, Graylog*.
+Technologies : *Go, CDS, Kubernetes, Helm, Terraform, PostgreSQL, TimescaleDB, Grafana, Camunda, expr, Kafka, Cucumber, Temporal.io, Mimir, Prometheus.io, Graylog*.
 
-<!-- SSG -->
+{{% /timeline-item %}}
 
-{{% side-img src="/experiences/soprasteria.webp" width="30px" class="col-gap-4 mb-3" img-class="flex-self-center" inner-class="row-gap-1" %}}
+{{% timeline-item inner-class="my-0 fgColor-default" %}}
 
-### Sopra Steria
-{class="m-0"}
-Ingénieur développement | Scrum Master
+### Ingénieur développement | Scrum Master
 {class="m-0"}
 Mars 2021 - Octobre 2022
-{class="m-0 text-small"}
+{class="mt-1 text-small"}
 
-{{% /side-img %}}
+Applications internes Java et Angular, au sein d'une équipe Scrum.
 
-- Facilitation des cérémonies Scrum, de l'auto-organisation de l'équipe et de l'amélioration continue du processus agile.
-- Participation à l'ensemble des phases d'une *User Story* : affinage, implémentation (spécifications, développement, tests fonctionnels), livraison, déploiement et support technique.
-- Formation fonctionnelle et technique des nouveaux acteurs.
+- Reprise du rôle de *Scrum Master* (cérémonies, accompagnement vers l'auto-organisation, amélioration continue).
+- Participation au développement d'API REST Java et d'IHM Angular, de l'affinage des *User Stories* au support.
+- Analyse des *User Stories* et conception de leur intégration dans le code, avec le soutien des plus expérimentés.
+- Accompagnement des nouveaux arrivants.
 
 Technologies : *Java, Spring, Quarkus, GitLab CI/CD, Karatelabs, Docker, Kubernetes, Helm, Traefik Proxy, TypeScript, Angular, Bootstrap, PostgreSQL, Hibernate, Liquibase, Python, ElasticSearch*.
 
-<!-- ALTEN -->
-
-{{% side-img src="/experiences/alten/10.webp" width="30px" class="col-gap-4 mb-3" img-class="flex-self-center" inner-class="row-gap-1" %}}
-
-### Alten
-{class="m-0"}
-Stagiaire consultant innovation
-{class="m-0"}
-Août 2020 - Février 2021
-{class="m-0 text-small"}
-
-{{% /side-img %}}
-
-<!-- EUROSYS -->
-
-{{% side-img src="/experiences/eurosys.webp" width="30px" class="col-gap-4 mb-3" img-class="flex-self-center" inner-class="row-gap-1" %}}
-
-### Eurosys
-{class="m-0"}
-Stagiaire étude et développement ExtJS
-{class="m-0"}
-Juin - Août 2019
-{class="m-0 text-small"}
-
-{{% /side-img %}}
-
-<!-- DDT -->
-
-{{% side-img src="/experiences/ddt/10.webp" width="30px" class="col-gap-4 mb-3" img-class="flex-self-center" inner-class="row-gap-1" %}}
-
-### DDT¹
-{class="m-0"}
-Vacataire étude et développement Java & Swing
-{class="m-0"}
-Août 2018
-{class="m-0 text-small"}
-
-{{% /side-img %}}
-
-<!-- DREAL -->
-
-{{% side-img src="/experiences/dreal/20.webp" width="30px" class="col-gap-4 mb-3" img-class="flex-self-center" inner-class="row-gap-1" %}}
-
-### DREAL²
-{class="m-0"}
-Stagiaire découverte réseau
-{class="m-0"}
-Juin 2016
-{class="m-0 text-small"}
-
-{{% /side-img %}}
-
-*¹ Direction Départementale des Territoires.*
-{class="text-right mb-0"}
-*² Direction Régionale de l'Environnement, de l'Aménagement et du Logement.*
-{class="text-right mb-0"}
+{{% /timeline-item %}}
 
 ## Formations
 
