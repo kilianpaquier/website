@@ -195,50 +195,90 @@ Stacks: *Java, Spring, Quarkus, GitLab CI/CD, Karatelabs, Docker, Kubernetes, He
 
 {{% /timeline-item %}}
 
-## Formations
+## Certifications
 
-<!-- ACE -->
+{{% div class="d-flex flex-wrap gutter-condensed row-gap-6 mb-3" %}}
 
-{{% timeline-item badge="/educations/ace.webp" inner-class="my-0 fgColor-default row-gap-1" %}}
+<!-- Professional Cloud Developer -->
 
-### ACE
+{{% media-card src="/educations/pcd.webp"
+  icon="/static/primer/verified-16.svg" icon-class="fgColor-success"
+  url="https://www.credly.com/badges/30c541da-362b-4c9d-9282-1efb49bd8d73" %}}
+
+### Professional Cloud Developer
 {class="m-0"}
-Google Cloud Associate Cloud Engineer
+Google Cloud
+{class="m-0"}
+October 2026
+{class="m-0 text-small"}
+
+{{% /media-card %}}
+
+<!-- GitLab CI/CD Associate -->
+
+{{% media-card src="/educations/gitlab-cicd.webp"
+  icon="/static/primer/verified-16.svg" icon-class="fgColor-success"
+  url="https://www.credly.com/badges/087732e8-6ba8-4c62-b3cc-fe870588cf57" %}}
+
+### CI/CD Associate
+{class="m-0"}
+GitLab
+{class="m-0"}
+October 2026
+{class="m-0 text-small"}
+
+{{% /media-card %}}
+
+<!-- Associate Cloud Engineer -->
+
+{{% media-card src="/educations/ace.webp"
+  icon="/static/primer/verified-16.svg" icon-class="fgColor-success"
+  url="https://www.credly.com/badges/df6e8a8f-8743-4784-9775-921712c4ae91" %}}
+
+### Associate Cloud Engineer
+{class="m-0"}
+Google Cloud
 {class="m-0"}
 September 2026
 {class="m-0 text-small"}
 
-{{% /timeline-item %}}
+{{% /media-card %}}
 
-<!-- PSM I -->
+<!-- Professional Scrum Master I -->
 
-{{% timeline-item badge="/educations/psmi.webp" inner-class="my-0 fgColor-default row-gap-1" %}}
+{{% media-card src="/educations/psmi.webp"
+  icon="/static/primer/verified-16.svg" icon-class="fgColor-success"
+  url="https://www.credly.com/badges/6a0d3859-9d25-43ba-b68a-041e09108f1a" %}}
 
-### PSM I
+### Professional Scrum Master™ I
 {class="m-0"}
-Professional Scrum Master™ I
+Scrum.org
 {class="m-0"}
 June 2022
 {class="m-0 text-small"}
 
-{{% /timeline-item %}}
+{{% /media-card %}}
+
+{{% /div %}}
+
+## Education
 
 <!-- UQAC -->
 
-{{% timeline-item badge="/educations/uqac/20.webp" inner-class="my-0 fgColor-default row-gap-1" %}}
+{{% avatar-item src="/educations/uqac/20.webp" width="40px" class="col-gap-5 mb-3" img-class="circle" %}}
 
 ### UQAC
 {class="m-0"}
-Master degree in Computer Science
+Master's degree in Computer Science
 {class="m-0"}
 August 2019 - February 2021
 {class="m-0 text-small"}
 
-{{% /timeline-item %}}
+{{% /avatar-item %}}
 
 <!-- Polytech Tours -->
 
-{{% timeline-item badge="/educations/polytechtours/20.webp" inner-class="my-0 fgColor-default row-gap-1" %}}
+{{% avatar-item src="/educations/polytechtours/20.webp" width="40px" class="col-gap-5 mb-3" img-class="circle" %}}
 
 ### Polytech Tours
 {class="m-0"}
@@ -247,7 +287,7 @@ Computer Engineering degree
 September 2017 - February 2021
 {class="m-0 text-small"}
 
-{{% /timeline-item %}}
+{{% /avatar-item %}}
 
 ## Interests
 
