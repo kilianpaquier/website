@@ -5,18 +5,18 @@ title: Kilian PAQUIER
 ---
 
 Hello 👋
-If you've come here by pure coincidence, I don't know how you did ?
-If it's not the case, then here is the opportunity to learn a bit about me.
+If you've come here by pure coincidence, I don't know how you did it!
+If that's not the case, then here is the opportunity to learn a bit about me.
 
 Passionate about Computer Science since the end of secondary school
-(development of small websites with the help of some friends and the **Site du Zéro**, known today as **Openclassrooms**),
+(development of small websites with the help of some friends and the **Site du Zéro**, known today as **OpenClassrooms**),
 I pursued a path towards an integrated preparatory class at **Polytech Tours** after graduating from high school.
 
-With their Computer Engineering degree and a double diploma at the **University of Quebec in Chicoutimi (UQAC)**,
+With the Computer Engineering degree of **Polytech Tours** and a dual degree at the **University of Quebec at Chicoutimi (UQAC)**,
 I completed my studies in 2021.
 
-My hobbies ? Programming (of course) small projects (linked with day-to-day issues), watching movies,
-TV shows or animes, play video games, read online mangas or manhwas, or even (and mostly) play pool.
+My hobbies? Programming small projects (of course, related to day-to-day issues), watching movies,
+TV shows or animes, playing video games, reading mangas or manhwas online, or even (and mostly) playing pool.
 
 ## Tooling
 

@@ -1,6 +1,6 @@
 ---
 date: 2025-05-19
-description: Page d'overview de mon site, mes expériences, mes centres d'intérêts, liens divers
+description: Page d'overview de mon site, mes expériences, mes centres d'intérêt, liens divers
 title: Kilian PAQUIER
 ---
 
@@ -13,7 +13,7 @@ Passionné par l'informatique depuis la fin du collège
 je me suis orienté après le lycée vers une classe préparatoire intégrée à **Polytech Tours**.
 
 Avec le cursus ingénieur de **Polytech Tours**
-et un double diplôme à **Université du Québec à Chicoutimi (UQAC)**, j'ai terminé mes études en 2021.
+et un double diplôme à l'**Université du Québec à Chicoutimi (UQAC)**, j'ai terminé mes études en 2021.
 
 Mes passions à côté ? Développer (évidemment) de petits projets (en lien avec des problématiques rencontrées au quotidien),
 regarder des films, séries ou animes, jouer aux jeux vidéo, lire des mangas ou manhwas en ligne
