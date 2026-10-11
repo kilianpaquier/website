@@ -38,8 +38,10 @@ TV shows or animes, playing video games, reading mangas or manhwas online, or ev
 ### Cloud
 
 {{< svg src="https://cdn.simpleicons.org/kubernetes" width="22" tooltip="Kubernetes" >}}
+{{< svg src="https://cdn.simpleicons.org/redhatopenshift" width="22" tooltip="OpenShift" >}}
 {{< svg src="https://cdn.simpleicons.org/googlecloud" width="22" tooltip="Google Cloud Platform" >}}
 {{< svg src="https://cdn.simpleicons.org/coolify" width="22" tooltip="Coolify" >}}
+{{< svg src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/incus.svg" width="22" tooltip="IncusOS" >}}
 {class="d-flex flex-wrap col-gap-4 row-gap-4"}
 
 ### Package management
