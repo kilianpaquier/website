@@ -21,8 +21,8 @@ TV shows or animes, playing video games, reading mangas or manhwas online, or ev
 ## Stacks
 
 Like many developers, I have my habits and above all my tools: wherever I go, they'll be there,
-whether for development, local environment,
-or delivery pipeline and preferred Cloud platforms when possible.
+whether for development, the delivery pipeline,
+or my preferred cloud platforms when possible.
 
 ### Development
 {class="mb-2"}
@@ -88,19 +88,19 @@ Cross-project mission, from audit to cloud migration.
 
 **Kubernetes migration**
 
-- Support on the migration of an application to an internal Kubernetes cluster, including its automated tests industrialization.
-- Alignment of an existing Helm chart of this application with standards and creation of a second one for part of its services.
-- Analysis of this application's file transfers switch, flow tests and follow-up of client actions.
-- Improvement areas raised to the architect (maintainability, legacy debt) and handling of quick wins.
+- Supported the migration of an application to an internal Kubernetes cluster, including CI integration of its automated tests.
+- Aligned the application's existing Helm chart with standards and created a second one for part of its services.
+- Analyzed the application's file-transfer cutover, tested the flows and followed up on client actions.
+- Raised improvement areas to the architect (maintainability, legacy debt) and handled quick wins.
 
 **Application insourcing**
 
-- Technical audit of a Java and RabbitMQ application (security, industrialization, quality) with remediation proposals.
-- Design of an API-configurable stub to replay real cases in testing and lighten Robot Framework scenarios.
+- Audited a Java and RabbitMQ application (security, CI/CD, quality) and proposed remediations.
+- Designed an API-configurable stub to replay real cases in testing and lighten Robot Framework scenarios.
 
 **GCP migration**
 
-- Support on the migration of an application to GCP, bringing a second opinion on some technical choices.
+- Supported the migration of an application to GCP, bringing a second opinion on some technical choices.
 
 Stacks: *Kubernetes, Helm, Traefik, GitLab CI/CD, Google Cloud Platform, Robot Framework*.
 
@@ -115,20 +115,20 @@ March 2021 - Today
 
 **Tooling and knowledge sharing**
 
-- Provision of shared AI components (Docker-based MCP servers) through an internal marketplace.
-- Contributions to shared CI/CD templates, driven by my missions' needs.
-- Short and long knowledge sharing sessions on topics such as Terraform, Go or Semantic Release.
+- Provided shared AI components (Docker-based MCP servers) through an internal marketplace.
+- Contributed to shared CI/CD templates, driven by my missions' needs.
+- Led short and long knowledge sharing sessions on topics such as Terraform, Go or Semantic Release.
 
 **Internal labs**
 
-- Design of a self-learning lab on Coolify, from service exposure to DNS resolution of a domain.
-- Industrialization of the lab with Terraform (reusable module, GitLab project per participant) and an online guide built with Hugo.
+- Designed a self-learning lab on Coolify, from service exposure to DNS resolution of a domain.
+- Automated the lab with Terraform (reusable module, GitLab project per participant) and wrote an online guide built with Hugo.
 
 **Student events**
 
-- Deployment of the CTFd platform on OpenShift for student events, with a training space.
-- Load tests of the platform and setup of the infrastructure components needed for its *autoscaling*.
-- Industrialization of the event and training platforms deployment, as well as the challenges.
+- Deployed the CTFd platform on OpenShift for student events, with a training space.
+- Load tested the platform and set up the infrastructure components needed for its *autoscaling*.
+- Automated the deployment of the event and training platforms, as well as the challenges.
 
 Stacks: *Terraform, Azure, Coolify, Hugo, Hextra, OpenShift, Helm, CTFd, RustFS, k6, GitLab CI/CD, Docker, MCP*.
 
@@ -143,13 +143,13 @@ October 2025 - August 2026
 
 Modernization of a legacy application and move to Google Cloud Platform.
 
-- Technical migration and split of a Java 8, Wicket 1.5 monolith to Java 21, Wicket 10 (API, webapp, jobs, batches).
-- Mapping of batch processing and its scheduling to prepare and simplify their move to Cloud Run.
-- Involvement in setting up a Go file ingestion component, to keep up with incoming files and better track processing.
-- Adaptation of the code and its configuration to the cloud, and improvement of log usability.
-- CI/CD redesign based on existing GitLab CI templates, up to Terraform deployment in production.
-- Deployment of components on Cloud Run, Cloud SQL, Memorystore and Cloud Storage, and testing with other systems.
-- Application audit and improvement proposals (event-driven ingestion, remaining technical debt, performance).
+- Migrated and split a Java 8, Wicket 1.5 monolith to Java 21, Wicket 10 (API, webapp, jobs, batches).
+- Mapped batch jobs and their scheduling to prepare and simplify their move to Cloud Run.
+- Helped set up a Go file ingestion component, to keep up with incoming files and better track processing.
+- Adapted the code and its configuration to the cloud, and improved log usability.
+- Redesigned the CI/CD on top of existing GitLab CI templates, up to Terraform deployment in production.
+- Deployed components on Cloud Run, Cloud SQL, Memorystore and Cloud Storage, and tested integrations with other systems.
+- Audited the application and proposed improvements (event-driven ingestion, remaining technical debt, performance).
 
 Stacks: *Shell, GitLab CI/CD, Terraform, Docker, Google Cloud Platform, Java, Spring, Wicket, Go, k6, Playwright*.
 
@@ -164,14 +164,14 @@ October 2022 - October 2025
 
 High-volume event processing Go applications, across three successive teams.
 
-- Contribution to a Go chain ingesting and enriching around 10 million Kafka events per day.
-- Development of the application foundation of a second Go chain, handling grouping and computations on these events.
-- Development of business processes with Camunda and of Temporal workflows.
-- Involvement in extending the expr language to make complex client specifics simple to configure through an API.
-- Technical study and design of new features with the Product Owner, up to production and Grafana monitoring.
-- Review of the team's work and onboarding of new team members.
-- Improvements to cross-team tooling (bot, project generator, PostgreSQL exporter, development environment).
-- Development of an Open Source Go builder generator for test data.
+- Contributed to a Go pipeline ingesting and enriching around 10 million Kafka events per day.
+- Built the application foundation of a second Go pipeline, handling grouping and computations on these events.
+- Developed business processes with Camunda and Temporal workflows.
+- Helped extend the expr language to make complex client-specific rules simple to configure through an API.
+- Studied and designed new features with the Product Owner, up to production and Grafana monitoring.
+- Reviewed the team's work and onboarded new team members.
+- Improved cross-team tooling (bot, project generator, PostgreSQL exporter, development environment).
+- Developed an Open Source Go builder generator for test data.
 
 Stacks: *Go, CDS, Kubernetes, Helm, Terraform, PostgreSQL, TimescaleDB, Grafana, Camunda, expr, Kafka, Cucumber, Temporal.io, Mimir, Prometheus.io, Graylog*.
 
@@ -186,10 +186,10 @@ March 2021 - October 2022
 
 Internal Java and Angular applications, within a Scrum team.
 
-- Scrum Master role taken over (ceremonies, guiding towards self-organization, continuous improvement).
-- Involvement in the development of Java REST APIs and Angular UIs, from User Story refinement to support.
-- User Story analysis and design of their integration into the code, with support from more experienced developers.
-- Onboarding of new team members.
+- Took over the Scrum Master role (ceremonies, guiding towards self-organization, continuous improvement).
+- Developed Java REST APIs and Angular UIs, from User Story refinement to support.
+- Analyzed User Stories and designed their integration into the code, with support from more experienced developers.
+- Onboarded new team members.
 
 Stacks: *Java, Spring, Quarkus, GitLab CI/CD, Karatelabs, Docker, Kubernetes, Helm, Traefik Proxy, TypeScript, Angular, Bootstrap, PostgreSQL, Hibernate, Liquibase, Python, ElasticSearch*.
 

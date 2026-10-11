@@ -208,7 +208,7 @@ voici quelques extensions *Open Source* ajoutant différents comportements :
   - [**conveyal/maven-semantic-release**](https://github.com/conveyal/maven-semantic-release)
   - [**terrestris/maven-semantic-release**](https://github.com/terrestris/maven-semantic-release)
 - Fusionner la branche publiée dans d'autres branches :
-  - [**@kilianpaquier/semantic-release-backmerge**](https://github.com/kilianpaquier/semantic-release-backmerge) :
+  - [**@kilianpaquier/semantic-release-backmerge**](https://gitlab.com/kilianpaquier/semantic-release-backmerge) :
     - Crée une *pull request* en cas de conflits
   - [**@saithodev/semantic-release-backmerge**](https://github.com/saitho/semantic-release-backmerge) :
     - Méthodologie de fusion (*fast forward*, *rebase*, etc.) configurable

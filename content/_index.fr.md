@@ -5,7 +5,7 @@ title: Kilian PAQUIER
 ---
 
 Bonjour 👋
-Si vous êtes arrivé(e)(s) ici par hasard, je ne sais pas comment vous avez fait ?
+Si vous êtes arrivé(e)(s) ici par hasard, je ne sais pas comment vous avez fait !
 Si ce n'est pas le cas, c'est l'occasion d'en apprendre un peu plus sur moi.
 
 Passionné par l'informatique depuis la fin du collège
@@ -21,9 +21,9 @@ ou encore (et surtout) jouer au billard.
 
 ## Stacks
 
-Comme un certain nombre de développeur(e)s, j'ai mes habitudes et surtout mes outils : où j'irai, ils seront,
-que ce soit sur l'aspect développement, environnement local,
-ou encore chaîne d'industrialisation et plateformes Cloud préférentielles lorsque possible.
+Comme un certain nombre de développeur(e)s, j'ai mes habitudes et surtout mes outils : là où j'irai, ils me suivront,
+que ce soit sur l'aspect développement, chaîne CI/CD
+ou encore plateformes cloud de prédilection lorsque c'est possible.
 
 ### Développement
 {class="mb-2"}
@@ -116,9 +116,9 @@ Mars 2021 - Aujourd'hui
 
 **Outillage et partage technique**
 
-- Mise à disposition des composants IA partagés (serveurs MCP sous Docker) via une marketplace interne.
+- Mise à disposition de composants IA partagés (serveurs MCP sous Docker) via une marketplace interne.
 - Contributions aux templates CI/CD partagés, au fil des besoins de mes missions.
-- Sessions de partage techniques, de formats courts à longs, sur des sujets comme Terraform, Go ou Semantic Release.
+- Sessions de partage technique, de formats courts à longs, sur des sujets comme Terraform, Go ou Semantic Release.
 
 **Labs internes**
 
@@ -180,7 +180,7 @@ Technologies : *Go, CDS, Kubernetes, Helm, Terraform, PostgreSQL, TimescaleDB, G
 
 {{% timeline-item inner-class="my-0 fgColor-default" %}}
 
-### Ingénieur développement | Scrum Master
+### Ingénieur études & développement | Scrum Master
 {class="m-0"}
 Mars 2021 - Octobre 2022
 {class="mt-1 text-small"}
