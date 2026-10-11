@@ -25,7 +25,7 @@ et configurable au travers d'une *CLI* (*Command Line Interface*) ou d'un fichie
 
 Une version est calculée à partir des nouveaux *commits* (de la branche qui doit être publiée) réalisés depuis la dernière version publiée.
 
-## Sur quoi se base t'il pour calculer une version ?
+## Sur quoi se base-t-il pour calculer une version ?
 
 Le calcul d'une version se base sur du [*Semantic Versioning*](https://semver.org/) (ou *semver*),
 c'est une [spécification](https://semver.org/#backusnaur-form-grammar-for-valid-semver-versions) (assez complète) pour le nommage de version.
@@ -43,13 +43,13 @@ c'est d'ailleurs pour cela que **semantic-release** propose une option de config
 
 ## Quel est le processus de publication ?
 
-Dans les détails de l'outil, le processus de publication consiste en suite d'étapes (fonctions) qui sont exécutées dans l'ordre suivant :
+Dans les détails de l'outil, le processus de publication consiste en une suite d'étapes (fonctions) qui sont exécutées dans l'ordre suivant :
 
 - *Verify conditions* : Vérification de certaines conditions (*tokens* d'accès par exemple)
 - *Get last release* : Récupération des *commits* réalisés depuis la dernière version
 - *Analyze commits* : Détermination de la nouvelle version (*prerelease*, *patch*, mineur, majeur, next, etc.)
 - *Verify release* : Étape libre pour les extensions afin de déterminer la conformité de la *release*
-- *Generate notes* : Génération des notes de la *release* (titre du *commit*, notes supplémentaires, organisation en section)
+- *Generate notes* : Génération des notes de la *release* (titre du *commit*, notes supplémentaires, organisation en sections)
 - *Create git tag* : Création du *tag* **git**
 - *Prepare* : Préparation de la *release*
 - *Publish* : Publication de la *release*
@@ -98,13 +98,13 @@ branches:
   - next-major
   # la branche nommée "beta" est catégorisée en prerelease
   # le tag créé sera de la forme 1.12.5-beta.X
-  # le X sera incrémenté en fonction du nombre de prerelease réalisées
+  # le X sera incrémenté en fonction du nombre de prereleases réalisées
   # sur la version actuelle pointée par la beta
   - name: beta
     prerelease: true
   # la branche nommée "staging" est catégorisée en prerelease
   # le tag créé sera de la forme 1.12.5-beta.X
-  # le X sera incrémenté en fonction du nombre de prerelease réalisées
+  # le X sera incrémenté en fonction du nombre de prereleases réalisées
   # sur la version actuelle pointée par la beta
   - name: staging
     prerelease: beta
@@ -135,7 +135,7 @@ Malgré tout, sans configuration particulière, **semantic-release** intègre le
 - [**@semantic-release/github**](https://github.com/semantic-release/github) :
   - Crée la *release* **GitHub** et notifie les *pull requests* / *issues* que ces sujets ont été publiés
 
-Comme l'étape d'analyse des *commits* est obligatoire dans le processus de publication de l'outil, je recommande de garder à minima
+Comme l'étape d'analyse des *commits* est obligatoire dans le processus de publication de l'outil, je recommande de garder a minima
 l'extension **@semantic-release/commit-analyzer** qui peut être configurée pour modifier les modalités du calcul de la nouvelle version :
 
 ```yaml
@@ -157,14 +157,14 @@ plugins:
         - { scope: "release", release: false }
 
       # la présence de BREAKING CHANGES ou BREAKING dans un commit
-      # indiquera à semantic-release de réaliser un version majeur
+      # indiquera à semantic-release de réaliser une version majeure
       # peu importe les types de commits présents dans la release attendue
       parserOpts:
         noteKeywords: [ "BREAKING CHANGES", "BREAKING" ]
 ```
 
 L'une des fonctionnalités intéressantes sur laquelle gravitent plusieurs extensions concerne la génération des notes de *release*.
-En effet on peut retrouver **@semantic-release/release-notes-generator** (abordé plus haut)
+En effet, on peut retrouver **@semantic-release/release-notes-generator** (abordé plus haut)
 et [**@semantic-release/changelog**](https://github.com/semantic-release/changelog) qui se sert de la précédente extension
 pour construire ou mettre à jour le fichier `CHANGELOG.md` (afin de suivre les changements réalisés à chaque version) :
 
@@ -199,7 +199,7 @@ plugins:
 En complément des deux exemples précédents et des extensions par défaut présentées,
 voici quelques extensions *Open Source* ajoutant différents comportements :
 
-- Créer des *release* en fonction de la plateforme **git** :
+- Créer des *releases* en fonction de la plateforme **git** :
   - [**@saithodev/semantic-release-gitea**](https://github.com/saitho/semantic-release-gitea) :
     - Crée la *release* **Gitea** et notifie les *pull requests* / *issues*
   - [**@semantic-release/gitlab**](https://github.com/semantic-release/gitlab) :
@@ -212,7 +212,7 @@ voici quelques extensions *Open Source* ajoutant différents comportements :
     - Crée une *pull request* en cas de conflits
   - [**@saithodev/semantic-release-backmerge**](https://github.com/saitho/semantic-release-backmerge) :
     - Méthodologie de fusion (*fast forward*, *rebase*, etc.) configurable
-- Exécuter des scripts shell personnalisés sur certaines (ou toutes) étapes d'exécution : [**@semantic-release/exec**](https://github.com/semantic-release/exec)
+- Exécuter des scripts shell personnalisés sur certaines (ou toutes les) étapes d'exécution : [**@semantic-release/exec**](https://github.com/semantic-release/exec)
 - Ajouter un *commit* à la branche publiée avec différents *assets* modifiés durant le processus de publication
   (`package.json`, `pom.xml`, `CHANGELOG.md`, `LICENSE`, etc.) : [**@semantic-release/git**](https://github.com/semantic-release/git)
 
@@ -236,7 +236,7 @@ Une extension est forcément un *package* npm qui exporte (au sens **JavaScript*
 au moins une des étapes d'exécution de **semantic-release** et qui soit "enregistré" ou "déployé" dans un registre npm.
 
 Pour que ce soit plus simple pour vos utilisateurs, je vous recommande d'utiliser le registre [npmjs.org](https://www.npmjs.com/)
-plutôt qu'un autre registre car cela nécessiterait de la configuration supplémentaire pour l'authentification et droits d'accès.
+plutôt qu'un autre registre car cela nécessiterait de la configuration supplémentaire pour l'authentification et les droits d'accès.
 
 ```ts
 import { SuccessContext, VerifyConditionsContext, ... } from 'semantic-release'
@@ -316,12 +316,12 @@ automatiquement sur les *pull requests* ou encore la possibilité de préciser l
 
 ### [**release-please**](https://github.com/googleapis/release-please)
 
-À la différence de **gh-release** ou **release-drafter**, cet outil se base, comme **semantic-release**
+À la différence de **gh-release** ou **release-drafter**, cet outil se base, comme **semantic-release**,
 sur les *commits* et les *conventional commits* pour déterminer la nouvelle version ainsi que les notes de *release*.
 
 C'est à la base une *CLI* qui est déclinée en Action **GitHub**, dans tous les cas la *CLI* n'est pour le moment (octobre 2024)
-disponible uniquement que pour **GitHub**.
+disponible que pour **GitHub**.
 
-L'un des gros atout de cet outil est de passer par une *pull request* mise à jour
+L'un des gros atouts de cet outil est de passer par une *pull request* mise à jour
 au fur et à mesure des fusions réalisées dans la branche ciblée par la *release*.
-Une fois la *pull request* principale fusionnée alors la *release* est créée au travers de l'action **GitHub**.
+Une fois la *pull request* principale fusionnée, la *release* est créée au travers de l'action **GitHub**.
