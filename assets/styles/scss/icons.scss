@@ -11,10 +11,20 @@
 [data-light-theme*="dark"] {
     :not(.octicon)>svg {
         &.githubcopilot>path,
+        &.helm>path,
         &.jsonschema>path,
+        &.mise>path,
         &.openai>path
         {
             fill: #ffff;
+        }
+    }
+}
+
+[data-light-theme*="light"] {
+    :not(.octicon)>svg {
+        &.opentofu>path {
+            fill: #000f;
         }
     }
 }

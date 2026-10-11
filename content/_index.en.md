@@ -18,50 +18,50 @@ I completed my studies in 2021.
 My hobbies? Programming small projects (of course, related to day-to-day issues), watching movies,
 TV shows or animes, playing video games, reading mangas or manhwas online, or even (and mostly) playing pool.
 
-## Tooling
+## Stacks
+
+Like many developers, I have my habits and above all my tools: wherever I go, they'll be there,
+whether for development, local environment,
+or delivery pipeline and preferred Cloud platforms when possible.
+
+### Development
+{class="mb-2"}
+
+{{< svg src="https://cdn.simpleicons.org/go" width="22" tooltip="Go" >}}
+{{< svg src="https://cdn.simpleicons.org/gnubash" width="22" tooltip="Bash" >}}
+{{< svg src="https://cdn.simpleicons.org/zsh" width="22" tooltip="Zsh" >}}
+{{< svg src="https://raw.githubusercontent.com/jdx/mise/main/docs/public/logo.svg" class="mise" width="22" height="22" tooltip="mise" >}}
+{{< svg src="https://cdn.simpleicons.org/hugo" width="22" tooltip="Hugo" >}}
+{{< svg src="/static/icons/visualstudiocode.svg" width="22" tooltip="Visual Studio Code" >}}
+{{< svg src="https://cdn.simpleicons.org/claude" width="22" tooltip="Claude Code" >}}
+{{< svg src="https://raw.githubusercontent.com/oven-sh/bun/refs/heads/main/docs/logo/logo.svg" width="22" tooltip="Bun" >}}
+{{< svg src="https://cdn.simpleicons.org/pnpm" width="22" tooltip="Pnpm" >}}
+{{< svg src="https://cdn.simpleicons.org/python" width="22" tooltip="Python" >}}
+{{< svg src="https://cdn.simpleicons.org/uv" width="22" tooltip="uv" >}}
+{{< svg src="/static/icons/jsonschema.svg" width="22" tooltip="JSON Schema" >}}
+{class="d-flex flex-wrap col-gap-4 row-gap-4"}
 
 ### CI/CD
 {class="mb-2"}
 
 {{< svg src="https://cdn.simpleicons.org/gitlab" width="22" tooltip="GitLab CI/CD" >}}
-{{< svg src="https://cdn.simpleicons.org/githubactions" width="22" tooltip="GitHub Actions" >}}
 {{< svg src="https://cdn.simpleicons.org/opentofu" width="22" tooltip="OpenTofu" >}}
 {{< svg src="https://cdn.simpleicons.org/terraform" width="22" tooltip="Terraform" >}}
 {{< svg src="https://cdn.simpleicons.org/semanticrelease" width="22" tooltip="Semantic Release" >}}
-{{< svg src="https://cdn.simpleicons.org/netlify" width="22" tooltip="Netlify" >}}
-{{< svg src="https://cdn.simpleicons.org/sonarqubeserver" width="22" tooltip="SonarQube" >}}
-{{< svg src="https://cdn.simpleicons.org/codecov" width="22" tooltip="CodeCov" >}}
-{{< svg src="https://cdn.simpleicons.org/dependabot" width="22" tooltip="Dependabot" >}}
 {{< svg src="https://cdn.simpleicons.org/renovate" width="22" tooltip="Renovate" >}}
 {class="d-flex flex-wrap col-gap-4 row-gap-4"}
 
 ### Cloud
+{class="mb-2"}
 
+{{< svg src="https://cdn.simpleicons.org/helm" width="22" tooltip="Helm" >}}
 {{< svg src="https://cdn.simpleicons.org/kubernetes" width="22" tooltip="Kubernetes" >}}
 {{< svg src="https://cdn.simpleicons.org/redhatopenshift" width="22" tooltip="OpenShift" >}}
-{{< svg src="https://cdn.simpleicons.org/googlecloud" width="22" tooltip="Google Cloud Platform" >}}
-{{< svg src="https://cdn.simpleicons.org/coolify" width="22" tooltip="Coolify" >}}
 {{< svg src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/incus.svg" width="22" tooltip="IncusOS" >}}
-{class="d-flex flex-wrap col-gap-4 row-gap-4"}
-
-### Package management
-{class="mb-2"}
-
-{{< svg src="https://cdn.simpleicons.org/pnpm" width="22" tooltip="Pnpm" >}}
-{{< svg src="https://raw.githubusercontent.com/oven-sh/bun/refs/heads/main/docs/logo/logo.svg" width="22" tooltip="Bun" >}}
-{{< svg src="https://cdn.simpleicons.org/yarn" width="22" tooltip="Yarn" >}}
-{{< svg src="https://cdn.simpleicons.org/npm" width="22" tooltip="Npm" >}}
-{{< svg src="https://cdn.simpleicons.org/apachemaven" width="22" tooltip="Maven" >}}
-{class="d-flex flex-wrap col-gap-4 row-gap-4"}
-
-### Others
-{class="mb-2"}
-
-{{< svg src="https://cdn.simpleicons.org/gnubash" width="22" tooltip="Bash" >}}
-{{< svg src="/static/icons/visualstudiocode.svg" width="22" tooltip="Visual Studio Code" >}}
-{{< svg src="/static/icons/jsonschema.svg" width="22" tooltip="JSON Schema" >}}
-{{< svg src="https://cdn.simpleicons.org/jira" width="22" tooltip="Jira" >}}
-{{< svg src="https://cdn.simpleicons.org/jfrog" width="22" tooltip="JFrog" >}}
+{{< svg src="https://cdn.simpleicons.org/googlecloud" width="22" tooltip="Google Cloud Platform" >}}
+{{< svg src="https://cdn.simpleicons.org/docker" width="22" tooltip="Docker" >}}
+{{< svg src="https://cdn.simpleicons.org/podman" width="22" tooltip="Podman" >}}
+{{< svg src="https://cdn.simpleicons.org/coolify" width="22" tooltip="Coolify" >}}
 {class="d-flex flex-wrap col-gap-4 row-gap-4"}
 
 ## Experiences
@@ -147,7 +147,7 @@ Modernization of a legacy application and move to Google Cloud Platform.
 - Mapping of batch processing and its scheduling to prepare and simplify their move to Cloud Run.
 - Involvement in setting up a Go file ingestion component, to keep up with incoming files and better track processing.
 - Adaptation of the code and its configuration to the cloud, and improvement of log usability.
-- CI/CD setup based on existing GitLab CI templates, up to Terraform deployment in production.
+- CI/CD redesign based on existing GitLab CI templates, up to Terraform deployment in production.
 - Deployment of components on Cloud Run, Cloud SQL, Memorystore and Cloud Storage, and testing with other systems.
 - Application audit and improvement proposals (event-driven ingestion, remaining technical debt, performance).
 
