@@ -42,7 +42,7 @@ Quelques exemples :
 - `1.0.0-dev.702c7fcc879`
 
 Commun en supplément d'ajouter le préfixe "v" aux versions,
-l'option `tagFormat` permet de paramétrer plus précisement le format du *tag* créé.
+l'option `tagFormat` permet de paramétrer plus précisément le format du *tag* créé.
 
 ---
 
@@ -57,7 +57,7 @@ l'option `tagFormat` permet de paramétrer plus précisement le format du *tag* 
 
 ---
 
-- *Generate notes* : Génération des notes de la *release* (titre du *commit*, notes supplémentaires, organisation en section)
+- *Generate notes* : Génération des notes de la *release* (titre du *commit*, notes supplémentaires, organisation en sections)
 - *Create git tag* : Création du *tag* **git**
 - *Prepare* : Préparation de la *release*
 - *Publish* : Publication de la *release*

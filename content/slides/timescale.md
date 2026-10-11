@@ -1,6 +1,6 @@
 ---
 date: 2024-10-16
-description: Ingestion de données *time-series* rendu simple
+description: Ingestion de données *time-series* rendue simple
 layout: bundle
 outputs: [ "Reveal" ]
 tags:
@@ -22,8 +22,8 @@ title: Timescale
 - Solution *Open Source* *On Premise* ou *Cloud* (payant)
 - Adapté à l'ingestion de données de type *time-series*
 - Partitionne les données de manière transparente pour gagner en performances
-- Intègre la possibilité de faire de l'aggrégation de données en continue
-- Gère la compression et rétention des données
+- Intègre la possibilité de faire de l'agrégation de données en continu
+- Gère la compression et la rétention des données
 
 ---
 
@@ -54,7 +54,7 @@ CREATE TABLE conditions (
   device      TEXT              NOT NULL,
   location    TEXT              NOT NULL,
   temperature DOUBLE PRECISION  NULL,
-  humidity    DOUBLE PRECISION  NULL
+  humidity    DOUBLE PRECISION  NULL,
 
   PRIMARY KEY (time, device, location)
 );
@@ -73,13 +73,13 @@ SELECT set_chunk_time_interval('conditions', INTERVAL '2 days');
 
 {{% section %}}
 
-## De l'aggrégation continue, pourquoi faire ?
+## De l'agrégation continue, pourquoi faire ?
 
 {{< figure src="/slides/timescale/pourquoi-faire.gif" class="text-center" width="350px" >}}
 
-- Éviter de parcourir l'entièreté de la table *live* pour obtenir une donnée aggrégée
-- Rafraichir les données aggrégées régulièrement (avec l'ajout de nouvelles données ou la modification d'anciennes données)
-- Les aggrégations continues peuvent profiter de la compression et rétention
+- Éviter de parcourir l'entièreté de la table *live* pour obtenir une donnée agrégée
+- Rafraîchir les données agrégées régulièrement (avec l'ajout de nouvelles données ou la modification d'anciennes données)
+- Les agrégations continues peuvent profiter de la compression et de la rétention
 
 ---
 
@@ -95,25 +95,25 @@ SELECT
   max(humidity) - min(humidity) AS humidity_spread
 FROM conditions -- doit se baser sur une hypertable
 GROUP BY bucket, device, location
-WITH NO DATA; -- ne pas populer l'aggrégation à sa création
+WITH NO DATA; -- ne pas alimenter l'agrégation à sa création
 SELECT set_chunk_time_interval('conditions_summary_hourly',
   INTERVAL '1 day');
 ```
 
 {{% note %}}
 
-- Par défaut, le taille d'un *chunk* d'une aggrégation continue
+- Par défaut, la taille d'un *chunk* d'une agrégation continue
   est 10 fois celle de l'hypertable sur laquelle elle se base
 
 {{% /note %}}
 
 ---
 
-## Comment puis-je garder mon aggrégation à jour ?
+## Comment puis-je garder mon agrégation à jour ?
 
-- Rafraichissement récurrent d'une aggrégation continue
-- Réaggrège uniquement les *buckets* dont les *chunks* associés ont changé
-- Ne rafraichie pas les données les plus récentes (*real time*)
+- Rafraîchissement récurrent d'une agrégation continue
+- Réagrège uniquement les *buckets* dont les *chunks* associés ont changé
+- Ne rafraîchit pas les données les plus récentes (*real time*)
 
 ```sql
 SELECT add_continuous_aggregate_policy('conditions_summary_hourly',
@@ -122,7 +122,7 @@ SELECT add_continuous_aggregate_policy('conditions_summary_hourly',
   end_offset => INTERVAL '1 hour',
   schedule_interval => INTERVAL '1 hour');
 
--- rafraîchir manuellement l'aggrégation (date de fin non comprise)
+-- rafraîchir manuellement l'agrégation (date de fin non comprise)
 CALL refresh_continuous_aggregate('conditions_summary_hourly',
   '2024-08-01',
   '2024-09-01');
@@ -130,9 +130,9 @@ CALL refresh_continuous_aggregate('conditions_summary_hourly',
 
 {{% note %}}
 
-- Lorsqu'un *chunk* présent dans la période d'aggrégation continue est modifié,
-  l'intégralité des *buckets* associés à ce *chunk* sont reconstruits.
-  Par exemple, si j'ajoute / met à jour une donnée du 15 août, tous les *buckets* horaires
+- Lorsqu'un *chunk* présent dans la période d'agrégation continue est modifié,
+  tous les *buckets* associés à ce *chunk* sont reconstruits.
+  Par exemple, si j'ajoute / mets à jour une donnée du 15 août, tous les *buckets* horaires
   de cette journée sont recalculés.
 
 {{% /note %}}
@@ -163,12 +163,12 @@ ALTER MATERIALIZED VIEW 'conditions_summary_hourly'
 ```sql
 -- pour compresser une hypertable
 ALTER TABLE conditions SET (timescaledb.compress,
-  timescaledb.compress_orderby = 'time DESC'
+  timescaledb.compress_orderby = 'time DESC',
   timescaledb.compress_segmentby = 'device, location');
 -- définition de l'ancienneté des données avant compression
 SELECT add_compression_policy('conditions', INTERVAL '2 months');
 
--- pour compresser une aggrégation continue
+-- pour compresser une agrégation continue
 ALTER MATERIALIZED VIEW 'conditions_summary_hourly'
   SET (timescaledb.compress = true);
 SELECT add_compression_policy('conditions_summary_hourly',
@@ -180,7 +180,7 @@ SELECT add_compression_policy('conditions_summary_hourly',
 ## Rétention, késako ?
 
 - Supprimer les plus anciennes données pour stabiliser l'espace disque
-- Aussi possible avec les aggrégations continues
+- Aussi possible avec les agrégations continues
 
 ```sql
 -- définition de la durée de rétention
@@ -193,9 +193,9 @@ SELECT add_retention_policy('conditions', INTERVAL '6 months')
 
 ## Quelles limitations ?
 
-- Décompression de tous les *chunks* à l'ajout d'un champ obligatoire ou valeur par défaut
+- Décompression de tous les *chunks* à l'ajout d'un champ obligatoire ou d'une valeur par défaut
 - Un *chunk* en cours de décompression prendra sa place compressée et sa place décompressée jusqu'à décompression complète
-- Obligation de supprimer et recréer une aggrégation continue lors d'un changement de schéma
+- Obligation de supprimer et recréer une agrégation continue lors d'un changement de schéma
 
 ---
 
@@ -203,4 +203,4 @@ SELECT add_retention_policy('conditions', INTERVAL '6 months')
 
 - [*Hyperfunctions*](https://docs.timescale.com/use-timescale/latest/hyperfunctions/)
 - [*Hyperfunctions blog*](https://www.timescale.com/blog/time-series-analytics-for-postgresql-introducing-the-timescale-analytics-project/)
-- [Aggrégations continues d'aggrégations continues](https://docs.timescale.com/use-timescale/latest/continuous-aggregates/hierarchical-continuous-aggregates/)
+- [Agrégations continues d'agrégations continues](https://docs.timescale.com/use-timescale/latest/continuous-aggregates/hierarchical-continuous-aggregates/)
