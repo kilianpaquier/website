@@ -116,14 +116,15 @@ Mars 2021 - Aujourd'hui
 
 **Outillage et partage technique**
 
-- Mise à disposition de composants IA partagés (serveurs MCP sous Docker) via une marketplace interne.
+- Création d'une marketplace interne de plugins pour partager agents, skills, MCP, etc. sur mon périmètre d'intervention.
 - Contributions aux templates CI/CD partagés, au fil des besoins de mes missions.
 - Sessions de partage technique, de formats courts à longs, sur des sujets comme Terraform, Go ou Semantic Release.
 
 **Labs internes**
 
 - Conception d'un lab d'autoformation sur Coolify, de l'exposition des services à la résolution DNS d'un domaine.
-- Industrialisation du lab avec Terraform (module réutilisable, projet GitLab par participant) et parcours en ligne sous Hugo.
+- Industrialisation du lab avec Terraform (module réutilisable, projet GitLab par participant).
+- Création d'un site Hugo (thème Hextra) regroupant les parcours guidés des labs de l'agence.
 
 **Événements étudiants**
 
@@ -171,7 +172,7 @@ Applications Go de traitement d'événements à fort volume, au sein de trois é
 - Participation à l'extension du langage expr pour rendre des spécificités clients complexes simples à configurer via une API.
 - Étude technique et conception des évolutions avec le *Product Owner*, jusqu'à la production et au suivi Grafana.
 - Revue des développements de l'équipe et accompagnement des nouveaux arrivants.
-- Évolutions de l'outillage transverse (bot, générateur de projets, exporter PostgreSQL, environnement de dev).
+- Évolutions de l'outillage transverse (bot de notification, générateur de projets, *exporter* PostgreSQL, environnement de dev).
 - Développement d'un générateur de builders Go *Open Source* pour les données de test.
 
 Technologies : *Go, CDS, Kubernetes, Helm, Terraform, PostgreSQL, TimescaleDB, Grafana, Camunda, expr, Kafka, Cucumber, Temporal.io, Mimir, Prometheus.io, Graylog*.

@@ -115,14 +115,15 @@ March 2021 - Today
 
 **Tooling and knowledge sharing**
 
-- Provided shared AI components (Docker-based MCP servers) through an internal marketplace.
+- Built an internal plugin marketplace to share agents, skills, MCP servers and more within my scope of work.
 - Contributed to shared CI/CD templates, driven by my missions' needs.
 - Led short and long knowledge sharing sessions on topics such as Terraform, Go or Semantic Release.
 
 **Internal labs**
 
 - Designed a self-learning lab on Coolify, from service exposure to DNS resolution of a domain.
-- Automated the lab with Terraform (reusable module, GitLab project per participant) and wrote an online guide built with Hugo.
+- Automated the lab with Terraform (reusable module, GitLab project per participant).
+- Built a Hugo site (Hextra theme) gathering the guided walkthroughs of the agency's labs.
 
 **Student events**
 
@@ -170,7 +171,7 @@ High-volume event processing Go applications, across three successive teams.
 - Helped extend the expr language to make complex client-specific rules simple to configure through an API.
 - Studied and designed new features with the Product Owner, up to production and Grafana monitoring.
 - Reviewed the team's work and onboarded new team members.
-- Improved cross-team tooling (bot, project generator, PostgreSQL exporter, development environment).
+- Improved cross-team tooling (notification bot, project generator, PostgreSQL exporter, dev environment).
 - Developed an Open Source Go builder generator for test data.
 
 Stacks: *Go, CDS, Kubernetes, Helm, Terraform, PostgreSQL, TimescaleDB, Grafana, Camunda, expr, Kafka, Cucumber, Temporal.io, Mimir, Prometheus.io, Graylog*.
