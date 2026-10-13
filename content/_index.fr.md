@@ -132,7 +132,7 @@ Mars 2021 - Aujourd'hui
 - Tests de charge de la plateforme et mise en place des briques d'infrastructure nécessaires à son *autoscaling*.
 - Industrialisation du déploiement des plateformes d'événement et d'entraînement, ainsi que des challenges.
 
-Technologies : *Terraform, Azure, Coolify, Hugo, Hextra, OpenShift, Helm, CTFd, RustFS, k6, GitLab CI/CD, Docker, MCP*.
+Stacks: *OpenShift, Helm, GitLab CI/CD, Terraform, Coolify, Azure, Hugo, k6, Docker*.
 
 {{% /timeline-item %}}
 

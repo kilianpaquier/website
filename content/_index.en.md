@@ -131,7 +131,7 @@ March 2021 - Today
 - Load tested the platform and set up the infrastructure components needed for its *autoscaling*.
 - Automated the deployment of the event and training platforms, as well as the challenges.
 
-Stacks: *Terraform, Azure, Coolify, Hugo, Hextra, OpenShift, Helm, CTFd, RustFS, k6, GitLab CI/CD, Docker, MCP*.
+Stacks: *OpenShift, Helm, GitLab CI/CD, Terraform, Coolify, Azure, Hugo, k6, Docker*.
 
 {{% /timeline-item %}}
 
